@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créditos de Imagens - TerraXplore</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2c3e50; /* Fundo azul escuro do footer */
+            font-family: 'Arial', sans-serif;
+            color: #ecf0f1; /* Texto claro */
+        }
+
+        /* Header */
+        .header {
+            width: 100%;
+            background: #2c3e50; /* Mesmo fundo do footer */
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db; /* Azul para o logo */
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #ecf0f1; /* Texto claro */
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #3498db; /* Azul ao passar o mouse */
+        }
+
+        /* Seção Principal */
+        .main-section {
+            padding: 120px 20px 40px; /* Espaço para o header fixo */
+            max-width: 800px;
+            margin: 0 auto;
+            color: #ecf0f1;
+        }
+
+        .main-section h1 {
+            font-size: 36px;
+            color: #3498db; /* Título em azul */
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            color: #3498db; /* Subtítulos em azul */
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        /* Footer (CSS fornecido) */
+        .footer-empresarial {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 2rem 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+            padding: 0 1.5rem;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-section h3 {
+            color: #3498db;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* Links do Footer */
+        .footer-links li,
+        .redes-sociais li {
+            margin-bottom: 0.5rem;
+            list-style: none;
+        }
+
+        .footer-links a,
+        .redes-sociais a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover,
+        .redes-sociais a:hover {
+            color: #3498db;
+        }
+
+        /* Seção da Equipe */
+        .equipe-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Ajustado para 3 colunas */
+            grid-template-rows: repeat(2, auto); /* 2 linhas */
+            gap: 1rem;
+        }
+
+        .membro-equipe {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.8rem;
+            border-radius: 5px;
+        }
+
+        .membro-equipe p {
+            margin: 0.3rem 0;
+        }
+
+        .membro-equipe a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        /* Newsletter (mantido, mesmo que não seja usado no HTML atual) */
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .newsletter-form input {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px;
+            flex: 1;
+        }
+
+        .newsletter-form button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background: #2980b9;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                padding: 15px 20px;
+                gap: 10px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .main-section h1 {
+                font-size: 28px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .section p {
+                font-size: 14px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                padding: 0 1rem;
+            }
+
+            .footer-section {
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+
+            .equipe-grid {
+                grid-template-columns: 1fr; /* Empilha em 1 coluna em telas menores */
+                grid-template-rows: auto;
+                gap: 1rem;
+            }
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="header">
+        <div class="logo">TerraXplore</div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="privacidade.html">Política de Privacidade</a>
+            <a href="serviço.html">Termos de Serviço</a>
+            <a href="creditos-imagens.html" class="active">Créditos de Imagens</a>
+        </div>
+    </nav>
+
+    <!-- Seção Principal - Créditos de Imagens -->
+    <section class="main-section">
+        <h1>Créditos de Imagens</h1>
+        <div class="section">
+            <h2>Fontes das Imagens</h2>
+            <p>Abaixo estão listadas as fontes das imagens utilizadas no site TerraXplore. Agradecemos aos criadores e plataformas que disponibilizam esse conteúdo.</p>
+        </div>
+        <div class="section">
+            <h2>Imagens Utilizadas</h2>
+            <ul style="list-style: none; padding-left: 0;">
+                <li><strong>Imagens:</strong> <a href="https://www.nationalgeographicbrasil.com/" target="_blank" style="color: #3498db;">National Geographic Brasil</a></li>
+
+                <li><strong>Imagens</strong> <a href="https://unsplash.com/" target="_blank" style="color: #3498db;">Unsplash</a> </li>
+            
+                <li><strong>Imagens</strong> <a href="https://www.canva.com/" target="_blank" style="color: #3498db;">Canva</a> </li>
+
+                <li><strong>Imagens</strong> <a href="https://www.pexels.com/pt-br/" target="_blank" style="color: #3498db;">Pexels</a> </li>
+
+                <li><strong>Imagens</strong> <a href="https://www.pexels.com/pt-br/" target="_blank" style="color: #3498db;">Freepik</a> </li>
+               
+                <li><strong>Outras Imagens:</strong> Propriedade do TerraXplore ou licenciadas sob Creative Commons</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Nota sobre Direitos Autorais</h2>
+            <p>Todas as imagens foram obtidas de fontes públicas ou licenciadas adequadamente. Caso você seja o detentor dos direitos de alguma imagem e deseje que ela seja removida ou creditada de forma diferente, entre em contato conosco através das redes sociais. </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-empresarial">
+        <div class="footer-container">
+            <!-- Seção Institucional -->
+            <div class="footer-section institucional">
+                <h3>TerraXplore</h3>
+                <p>© 2025 TerraXplore. Todos os direitos reservados.</p>
+                <ul class="footer-links">
+                    <li><a href="privacidade.html" target="_blank">Política de Privacidade</a></li>
+                    <li><a href="serviço.html" target="_blank">Termos de Serviço</a></li>
+                    <li><a href="creditos-imagens.html" target="_blank">Créditos de Imagens</a></li>
+                </ul>
+            </div>
+
+            <!-- Seção Redes Sociais -->
+            <div class="footer-section contato">
+                <h3>Redes Sociais</h3>
+                <ul class="redes-sociais">
+                    <li><a href="https://www.linkedin.com/in/terraxplore/" target="_blank">LinkedIn</a></li>
+                    <li><a href="#" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

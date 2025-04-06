@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraXplore</title>
+    <link rel="stylesheet" href="assets/aurora.css" type="text/css">
+    <link rel="stylesheet" href="assets/slide1.css" type="text/css">
+    <link rel="shortcut icon" href="assets/logo/logonova.png" type="image/x-icon">
+</head>
+<body> 
+    <main>
+<!-- secao principal  -->   
+        <section id="secao-principal">
+            <video id="video-fundo" autoplay muted loop>
+                <source src="assets/videos/aurora-fundo.mp4" type="video/mp4">
+            </video>
+            
+            <div id="fundo-principal">
+                <header id="header-fenomeno">
+                    <nav class="heder">
+                        <div>
+                          <div class="svg-container">
+                            <svg ...></svg>
+                          </div>
+                          <div class="navlogo"><img src="assets/logo/logonova.png" alt=" Imagem de fundo"></div>
+                        </div>
+                        <div id="repon">
+                            <a href="../index.html">Home</a>
+                            <a href="../fenomenos-atmosfericos/atmosfericos.html">Atmosféricos</a>
+                            <a href="../furacao/furacao.html" >Climáticos</a>
+                            <a href="../nevasca/nevasca.html">Extremos</a>
+                            <a href="../terremoto/terremoto.html" >Geológicos</a>
+                            <a href="../tsunami/tsunami.html" >Oceânicos</a>
+                            <a href="../halo/halo.html" >Ópticos</a>
+                          </div>
+                          <div class="svg-container">
+                            <svg ...></svg>
+                          </div>
+                        </div>
+                    </nav>
+                </header>
+                <div id="titulo-principal">
+                    <h1> Fenômeno Atmosférico: Aurora (Boreal & Austral) </h1>
+                </div>
+                <div id="botao-aurora"> 
+                    <div id="som">
+                        <audio id="audio-player" loop>
+                            <source src="assets/videos/aurora-som2.mp3" type="audio/mp3"/>
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                        <div class="audio-controls">
+                            <button id="play-pause" class="control-btn">▶</button>
+                            <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1" class="volume-slider">
+                            <span id="volume-icon" class="volume-icon">🔊</span>
+                        </div>
+                    </div>
+                </div>
+                <script src="audio.js"></script>
+            </div>
+        </section>
+        
+        <section id="secao3d">
+            <div class="container">
+                <div class="coluna-texto">
+                    <h2>O que é a Aurora Boreal ou Austral?</h2>
+                    <h3>Um fenômeno atmosférico fascinante</h3>
+                    <div class="camadas">
+                        <!-- Camada 1: Explicação Básica -->
+                        <div class="camada" id="camada-1">
+                            <p>Ela ocorre na região dos polos da Terra. Existem dois tipos de aurora: Aurora boreal que aparece no Hemisfério Norte e a aurora austral que aparece no Hemisfério Sul. Apesar dos nomes diferentes, ambas são o mesmo fenômeno e criam paisagens incríveis com tons de verde, rosa e roxo, encantando quem as observa.</p>
+                            <button class="botao-camada" onclick="mostrarCamada(2)">Clique aqui para saber mais detalhadamente</button>
+                        </div>
+                        <!-- Camada 2: Explicação Detalhada com Infográfico -->
+                        <div class="camada" id="camada-2" style="display: none;">
+                            <h3>Como ocorrem?</h3>
+                            <p>
+                                •	O Sol emite partículas carregadas (ventos solares).
+                            </p>
+                            <p>
+                                •	Essas partículas são atraídas pelo campo magnético da Terra.
+                            </p>
+                            <p>
+                                •	Ao chegarem à atmosfera, colidem com gases como oxigênio e nitrogênio.
+                            </p>
+                            <p>
+                                •	Essa colisão libera energia em forma de luz colorida.
+                            </p>
+
+                            <button class="botao-camada voltar" onclick="mostrarCamada(1)">Voltar</button>
+                            <button class="botao-camada" onclick="mostrarCamada(3)">Saiba mais com vídeos e links</button>
+                        </div>
+                        <!-- Camada 3: Recursos Extras -->
+                        <div class="camada" id="camada-3" style="display: none;">
+                            <p>Explore mais sobre o halo solar com os seguintes recursos:</p>
+                            <ul class="recursos-extras">
+                                <li><a href="https://youtu.be/2rSkBL7jIHI?si=wG9EhavyGaqtlDU-" target="_blank">Como as Auroras Boreais Acontecem? Saiba mais sobre este fenômeno incrível!</a></li>
+                                <li><a href="https://mundoeducacao.uol.com.br/geografia/aurora-boreal.htm">Aurora (Fenômeno Atmosférico)</a></li>
+                            </ul>
+                            <button class="botao-camada voltar" onclick="mostrarCamada(2)">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="coluna-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OarX3jxIdxs?si=SOUN_L2oNRZsd8NG&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="legenda">Veja a beleza de uma aurora em 360°!</p>
+                </div>
+            </div>
+        </section>
+
+
+
+       
+        
+        <section id="secao-fotos">
+            <h1>De onde vem e quais os tipos!</h1>
+            <p class="legenda">Passe o mouse nas imagens para descobrir mais!</p>
+            <div class="lista">
+                <div class="item">
+                        <img src="assets/imagens/aurora-de-ondevem.jpg">
+                            <p>De onde vêm as cores da aurora? <br> <br>
+                            •	Verde (mais comum) - Oxigênio a 100-300 km de altitude. <br>
+                            •	Vermelho - Oxigênio acima de 300 km. <br>
+                            •	Azul e violeta - Nitrogênio em baixas altitudes. <br>
+                            •	Roxo e rosa - Mistura de oxigênio e nitrogênio.</p>
+                </div>
+                <div class="item">
+                    <img src="assets/imagens/aurora-tipos.jpg">
+                        <p>Tipos de aurora em cada hemisfério <br> <br>
+                        •	Arcos: Faixas longas e brilhantes. <br>
+                        •	Cortinas: Ondas luminosas que parecem tecidos esvoaçantes. <br>
+                        •	Pulsantes: Aparecem e desaparecem em flashes. <br>
+                        •	Raiadas: Estruturas finas e verticais como feixes de luz.</p>
+                </div>
+            </div>
+        </section>
+
+<!-- secao de curiosidade -->        
+<section id="secao-curiosidade"> 
+    <h1> CURIOSIDADES SOBRE FENOMENO </h1>
+
+    <div class="curiosidade-container">
+        <div class="curiosidade-aurora">
+            <p>
+                <strong>Auroras tem som</strong> <br>
+                Auroras podem fazer barulho! Algumas pessoas relatam ouvir estalos ou sussurros durante auroras intensas, embora seja raro.
+            </p>
+        </div>
+
+        <div class="curiosidade-aurora">
+            <p>
+                <strong>Ocorrem e outros planetas</strong> <br>
+                Elas podem ocorrer em outros planetas! Júpiter, Saturno, Urano e Netuno também têm auroras devido aos seus campos magnéticos.
+            </p>
+        </div>
+
+        <div class="curiosidade-aurora">
+            <p>
+                <strong>Mudança de cor</strong> <br>
+                As cores mudam com a altitude! O verde aparece mais baixo (100-300 km), enquanto o vermelho surge em altitudes mais altas (acima de 300 km).
+            </p>
+        </div>
+
+        <div class="curiosidade-aurora">
+            <p>
+                <strong>Visão do espaço</strong> <br>
+                Podem ser vistas do espaço! Astronautas na Estação Espacial Internacional já registraram auroras do alto, parecendo um brilho ao redor da Terra. 
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<main id="mainSlider">
+    <ul class="slider">
+
+      <li class="item2" style="background-image: url('assets/imagens/aurora-borealis.webp')">
+        <div class="content">
+          <div class="fundoslide">
+            <h2 class="title">Dança das Luzes</h2><br>
+            <h2 class="title">"Montanhas Árticas"</h2>
+            <p class="description">A aurora boreal ilumina o céu noturno com tons de verde e roxo, dançando sobre uma montanha rochosa, criando um espetáculo mágico em um cenário ártico. Localizado em Kiruna, Suécia, um dos melhores lugares para ver a aurora boreal na Lapônia sueca.</p>
+          </div>
+          <button onclick="window.open('https://borealisexpedicoes.com.br/ver-aurora-boreal-na-suecia-cidades-melhor-epoca-e-mais/')">conheça mais</button>
+        </div>
+      </li>
+
+      <li class="item2" style="background-image: url('assets/imagens/aurora-gjenvollhytta-noruega.webp')">
+        <div class="content">
+          <div class="fundoslide">
+            <h2 class="title">Véu de Luz</h2><br>
+            <h2 class="title">"Floresta Polar"</h2>
+            <p class="description">A aurora boreal forma um véu de luz verde e roxa sobre uma floresta coberta de neve, com árvores esparsas destacando a beleza etérea do fenômeno em um cenário polar. Localizado em Tromsø, Noruega, conhecido como a "Capital Norueguesa da Aurora Boreal".</p>
+          </div>
+          <button onclick="window.open('https://www.visittromso.no/')">conheça mais</button>
+        </div>
+      </li>
+      
+      <li class="item2" style="background-image: url('assets/imagens/aurora-islandia.webp')">
+        <div class="content">
+          <div class="fundoslide">
+            <h2 class="title">Luzes Sagradas</h2><br>
+            <h2 class="title">"Igreja no Ártico"</h2>
+            <p class="description">A aurora boreal brilha em tons de verde vibrante sobre uma pequena igreja branca com telhado vermelho, cercada por um cemitério e montanhas escuras, em um cenário ártico sereno e místico. Localizado em Vik, Islândia, famoso por suas paisagens dramáticas e avistamentos da aurora.</p>
+          </div>
+          <button onclick="window.open('https://pt.islandia.com/aurora-boreal')">conheça mais</button>
+        </div>
+      </li>
+
+      <li class="item2" style="background-image: url('assets/imagens/aurora-inicio.jpg')">
+        <div class="content">
+          <div class="fundoslide">
+            <h2 class="title">Jornada sob as Luzes</h2><br>
+            <h2 class="title">"Deserto Gelado"</h2>
+            <p class="description">A aurora boreal ilumina o céu com tons de verde em um deserto gelado, onde um veículo solitário atravessa a neve, sob um céu estrelado que reflete a magia do Ártico. Localizado em Yellowknife, Canadá, um dos melhores destinos para ver a aurora boreal no mundo.</p>
+          </div>
+          <button onclick="window.open('https://blog.venturas.com.br/aurora-boreal-no-canada-como-acompanhar-esse-fenomeno/')">conheça mais</button>
+        </div>
+      </li>
+
+      <li class="item2" style="background-image: url('assets/imagens/aurora-introducao.jpg')">
+        <div class="content">
+          <div class="fundoslide">
+            <h2 class="title">Esplendor no Céu</h2><br>
+            <h2 class="title">"Horizonte Ártico"</h2>
+            <p class="description">A aurora boreal brilha com intensos tons de verde e roxo, iluminando o horizonte ártico sobre uma paisagem escura, com reflexos suaves que dançam no céu estrelado. Localizado em Fairbanks, Alasca, conhecido por seus horizontes abertos e alta frequência de auroras.</p>
+          </div>
+          <button onclick="window.open('https://auroraboreal.com.br/blog/categoria/alasca/#:~:text=Muitas%20pessoas%20n%C3%A3o%20sabem%20que,mais%20long%C3%ADnquo%20dos%20Estados%20Unidos.')">conheça mais</button>
+        </div>
+      </li>
+ 
+    </ul>
+    <nav class="nav2">
+      <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+      <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+    </nav>
+</main>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="aurora.js"></script>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+<!-- footer -->  
+<footer class="footer-empresarial">
+    <div class="footer-container">
+        <!-- Seção Institucional -->
+        <div class="footer-section institucional">
+            <h3>TerraXplore</h3>
+            <p>© 2025 TerraXplore. Todos os direitos reservados. <br> <br></p>
+            <ul class="footer-links">
+                <li><a href="../politica-termos/privacidade.html" target="_blank">Política de Privacidade</a></li>
+                <li><a href="../politica-termos/serviço.html" target="_blank">Termos de Serviço</a></li>
+                <li><a href="../politica-termos/creditos.html" target="_blank">Créditos de imagens</a></li>
+            </ul>
+        </div>
+
+      <!-- Seção Redes Sociais -->
+      <div class="footer-section contato">
+        <h3>Redes Sociais</h3>
+        <ul class="redes-sociais">
+            <li><a href="https://www.linkedin.com/in/terraxplore/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/terraxplore01?igsh=MTZoNXkxbzI1OWh4eQ== " target="_blank">Instagram</a></li>
+        </ul>
+
+    </div>
+
+    </div>
+</footer>
+
+<script src="hader.js"></script>
+<script src="neve360.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - TerraXplore</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2c3e50; /* Fundo azul escuro do footer */
+            font-family: 'Arial', sans-serif;
+            color: #ecf0f1; /* Texto claro */
+        }
+
+        /* Header */
+        .header {
+            width: 100%;
+            background: #2c3e50; /* Mesmo fundo do footer */
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db; /* Azul para o logo */
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #ecf0f1; /* Texto claro */
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #3498db; /* Azul ao passar o mouse */
+        }
+
+        /* Seção Principal */
+        .main-section {
+            padding: 120px 20px 40px; /* Espaço para o header fixo */
+            max-width: 800px;
+            margin: 0 auto;
+            color: #ecf0f1;
+        }
+
+        .main-section h1 {
+            font-size: 36px;
+            color: #3498db; /* Título em azul */
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            color: #3498db; /* Subtítulos em azul */
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        /* Footer (CSS fornecido) */
+        .footer-empresarial {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 2rem 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+            padding: 0 1.5rem;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-section h3 {
+            color: #3498db;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* Links do Footer */
+        .footer-links li,
+        .redes-sociais li {
+            margin-bottom: 0.5rem;
+            list-style: none;
+        }
+
+        .footer-links a,
+        .redes-sociais a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover,
+        .redes-sociais a:hover {
+            color: #3498db;
+        }
+
+        /* Seção da Equipe */
+        .equipe-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Ajustado para 3 colunas */
+            grid-template-rows: repeat(2, auto); /* 2 linhas */
+            gap: 1rem;
+        }
+
+        .membro-equipe {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.8rem;
+            border-radius: 5px;
+        }
+
+        .membro-equipe p {
+            margin: 0.3rem 0;
+        }
+
+        .membro-equipe a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        /* Newsletter (mantido, mesmo que não seja usado no HTML atual) */
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .newsletter-form input {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px;
+            flex: 1;
+        }
+
+        .newsletter-form button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background: #2980b9;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                padding: 15px 20px;
+                gap: 10px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .main-section h1 {
+                font-size: 28px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .section p {
+                font-size: 14px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                padding: 0 1rem;
+            }
+
+            .footer-section {
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+
+            .equipe-grid {
+                grid-template-columns: 1fr; /* Empilha em 1 coluna em telas menores */
+                grid-template-rows: auto;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="header">
+        <div class="logo">TerraXplore</div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="privacidade.html" class="active">Política de Privacidade</a>
+            <a href="serviço.html">Termos de Serviço</a>
+            <a href="creditos.html" class="active">Créditos de Imagens</a>
+        </div>
+    </nav>
+
+    <!-- Seção Principal -->
+    <section class="main-section">
+        <h1>Política de Privacidade</h1>
+        <div class="section">
+            <h2>Introdução</h2>
+            <p>No TerraXplore, valorizamos sua privacidade. Esta Política de Privacidade descreve como tratamos as informações que coletamos quando você visita nosso site.</p>
+        </div>
+        <div class="section">
+            <h2>Coleta de Dados</h2>
+            <p>Atualmente, o TerraXplore não coleta dados pessoais dos usuários, como nome, e-mail ou outras informações identificáveis. Nosso site é apenas informativo.</p>
+        </div>
+        <div class="section">
+            <h2>Uso de Cookies</h2>
+            <p>Não utilizamos cookies ou tecnologias de rastreamento no momento. Caso isso mude no futuro, atualizaremos esta política e informaremos os usuários.</p>
+        </div>
+        <div class="section">
+            <h2>Alterações na Política</h2>
+            <p>Podemos atualizar esta Política de Privacidade a qualquer momento. As alterações serão publicadas nesta página.</p>
+        </div>
+        <div class="section">
+            <h2>Contato</h2>
+            <p>Se tiver dúvidas sobre nossa Política de Privacidade, entre em contato conosco através da página de <a href="contato.html" style="color: #3498db;">Contato</a>.</p>
+        </div>
+    </section>
+
+    <!-- Footer (Atualizado com o HTML fornecido) -->
+    <footer class="footer-empresarial">
+        <div class="footer-container">
+            <!-- Seção Institucional -->
+            <div class="footer-section institucional">
+                <h3>TerraXplore</h3>
+                <p>© 2025 TerraXplore. Todos os direitos reservados. <br> <br></p>
+                <ul class="footer-links">
+                    <li><a href="../politica-termos/privacidade.html" target="_blank">Política de Privacidade</a></li>
+                    <li><a href="../politica-termos/serviço.html" target="_blank">Termos de Serviço</a></li>
+                </ul>
+            </div>
+    
+            <!-- Seção da Equipe -->
+            <div class="footer-section equipe">
+                <h3>Nossa Equipe</h3>
+                <div class="equipe-grid">
+                    <!-- Linha 1 -->
+                    <!-- Membro 1 -->
+                    <div class="membro-equipe">
+                        <p><strong>Gabriel Cabral</strong></p>
+                        <p>Front-end Developer</p>
+                        <a href="https://github.com/GabrielCabral111" target="_blank">github.com/GabrielCabral111</a>
+                    </div>
+                    <!-- Membro 2 -->
+                    <div class="membro-equipe">
+                        <p><strong>Luana Portela</strong></p>
+                        <p>Front-end Developer, UX/UI Designer</p>
+                        <a href="https://github.com/LuaPortela" target="_blank">github.com/LuaPortela</a>
+                    </div>
+                    <!-- Membro 3 -->
+                    <div class="membro-equipe">
+                        <p><strong>Talita Vitória</strong></p>
+                        <p>Front-end Developer</p>
+                        <a href="https://github.com/Atila246" target="_blank">github.com/Atila246</a>
+                    </div>
+                    <!-- Linha 2 -->
+                    <!-- Membro 4 -->
+                    <div class="membro-equipe">
+                        <p><strong>Matheus Papini</strong></p>
+                        <p>Front-end Developer</p>
+                        <a href="https://github.com/MatheusMPapini" target="_blank">github.com/MatheusMPapini</a>
+                    </div>
+                    <!-- Membro 5 -->
+                    <div class="membro-equipe">
+                        <p><strong>Gabriela Santos</strong></p>
+                        <p>Front-end Developer</p>
+                        <a href="https://github.com/pedrocosta" target="_blank">github.com/gabi</a>
+                    </div>
+                    <!-- Membro 6 -->
+                    <div class="membro-equipe">
+                        <p><strong>Gustavo Garbim</strong></p>
+                        <p>Front-end Developer</p>
+                        <a href="https://github.com/luanamendes" target="_blank">github.com/gustavo</a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </footer>
+</body>
+</html>

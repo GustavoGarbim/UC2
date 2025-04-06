@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraXplore</title>
+    <link rel="shortcut icon" href="logo/logoX.png">
+    <link rel="stylesheet" href="css/nevasca.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500&display=swap">
+</head>
+<body>
+    <main>
+        <canvas id="scene"></canvas>
+        <section id="secao-Nevasca">
+            <div id="secao-img"><img src="imgs/hed_nevasca.jpg" alt="Logo da Home"></div>
+            <div id="fundo-Nevasca">
+                
+              <nav class="heder">
+                <div>
+                  <div class="svg-container">
+                    <svg ...></svg>
+                  </div>
+                  <div class="navlogo"><img src="logo/logo-ok.png" alt=" Imagem de fundo"></div>
+                </div>
+                <div id="repon">
+                  <a href="../index.html">Home</a>
+                  <a href="../fenomenos-atmosfericos/atmosfericos.html">Atmosféricos</a>
+                  <a href="../furacao/furacao.html" >Climáticos</a>
+                  <a href="../nevasca/nevasca.html">Extremos</a>
+                  <a href="../terremoto/terremoto.html" >Geológicos</a>
+                  <a href="../tsunami/tsunami.html" >Oceânicos</a>
+                  <a href="../halo/halo.html" >Ópticos</a>
+                  </div>
+                  <div class="svg-container">
+                    <svg ...></svg>
+                  </div>
+                </div>
+                
+          
+              </nav>
+                <div id="titulo-Nevasca"> <h1 id="texto-titulo"> <strong>  O Fenômeno Extremo do Inverno <br>
+                  NEVASCAS ❄️ </strong> </h1></div>
+                  <div id="botao-Nevasca"> 
+                    <div id="som">
+                        <audio id="audio-player" loop>
+                            <source src="audio/Iframe Snowstorm Sound Effect - Winter Storm - Blizzard [0klq20uJxAU].mp3" type="audio/mp3" />
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                        <div class="audio-controls">
+                            <button id="play-pause" class="control-btn">▶</button>
+                            <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1" class="volume-slider">
+                            <span id="volume-icon" class="volume-icon">🔊</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <script src="js/audio.js"></script>
+                
+            </div>
+            
+        </section>
+        <!-- secao de conteudo/introducao e possivel 3d -->         
+        <section id="secao3d">
+          <div class="container">
+              <div class="coluna-texto">
+                  <h2>O que é a Nevasca?</h2>
+                  <h3>🌨️ Nevasca: O Fenômeno Extremo do Inverno </h3>
+                  <div class="camadas">
+                      <!-- Camada 1: Explicação Básica -->
+                      <div class="camada" id="camada-1">
+                          <p>Uma nevasca é uma <span class='destaque'>tempestade de neve intensa</span> acompanhada de <span class='destaque'>ventos fortes e baixa visibilidade</span>. tornando viagens perigosas e podendo causar grandes impactos nas cidades. Esse fenômeno pode durar várias horas ou até dias, resultando em temperaturas congelantes e acúmulo de neve nas ruas e estradas.</p>
+                          <button class="botao-camada" onclick="mostrarCamada(2)">Clique aqui para saber mais detalhadamente</button>
+                      </div>
+                      <!-- Camada 2: Explicação Detalhada com Infográfico -->
+                      <div class="camada" id="camada-2" style="display: none;">
+                          <p>Uma nevasca é uma tempestade de neve intensa, caracterizada por ventos fortes, baixa visibilidade e grande acúmulo de neve. Ela pode ocorrer em regiões frias e montanhosas, especialmente no inverno, e pode durar de algumas horas a vários dias.</p>
+                          <p>Características principais de uma nevasca: <br><span class='destaque'>Neve intensa</span> A precipitação de neve é contínua e pode acumular grandes quantidades no solo. <br><span class='destaque'>Ventos fortes</span> Podem atingir velocidades superiores a 50 km/h, espalhando a neve e reduzindo ainda mais a visibilidade.</p>
+                          <div class="infografico">
+                              <h3>Casos históricos de nevascas famosas:</h3>
+                              <div class="etapa">
+                                  <span class="etapa-titulo" data-tooltip="Uma das mais severas da história dos EUA, deixou Nova York e outras cidades completamente paralisadas.">A Grande Nevasca de 1888 (EUA) </span>
+                              </div>
+                              <div class="etapa">
+                                  <span class="etapa-titulo" data-tooltip="Causou grandes estragos na costa leste dos EUA, com acúmulos recordes de neve.">Nevasca de 2010 (Snowmageddon, EUA) </span>
+                              </div>
+                              <div class="etapa">
+                                  <span class="etapa-titulo" data-tooltip="Em Toronto, o exército precisou ser chamado para ajudar na remoção da neve.">Nevasca no Canadá (1999)</span>
+                              </div>
+                              <div class="etapa">
+                                  <span class="etapa-titulo" data-tooltip="Conhecida como a Superstorm de 1993, essa tempestade de neve atingiu 26 estados americanos, causando ventos de furacão e precipitação intensa de neve. Mais de 270 pessoas morreram, e milhões ficaram sem eletricidade.">Nevasca de 1993 (A Superstorm) – EUA</span>
+                              </div>
+                          </div>
+                          <button class="botao-camada voltar" onclick="mostrarCamada(1)">Voltar</button>
+                          <button class="botao-camada" onclick="mostrarCamada(3)">Saiba mais com vídeos e links</button>
+                      </div>
+                      <!-- Camada 3: Recursos Extras -->
+                      <div class="camada" id="camada-3" style="display: none;">
+                          <p>Explore mais sobre o halo solar com os seguintes recursos:</p>
+                          <ul class="recursos-extras">
+                              <li><a href="https://youtu.be/Pxd4plSHShg?si=9-Te7urECG9hj3lL" target="_blank">Nevascas, combinações letais de vento e neve | Desastres Mortais</a></li>
+                              <li><a href="https://vocenaneve.com.br/o-que-e-nevasca-entenda-o-fenomeno-natural/" target="_blank">O que é nevasca? Entenda o fenômeno natural</a></li>
+                          </ul>
+                          <button class="botao-camada voltar" onclick="mostrarCamada(2)">Voltar</button>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="coluna-video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/IQFDVGHzHYI?si=s1DzXPc-rb26sleB&amp;start=18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+                    </iframe>
+                  <p class="legenda">Explore a Nevasca em 360°!</p>
+              </div>
+          </div>
+      </section>
+      
+      <section id="secao-curiosidade">
+        <h1>Curiosidades Sobre a Nevasca</h1>
+        <p class="legendas">Passe o mouse nas imagens para descobrir mais!</p>
+        <div class="listas">
+            <div class="listas">
+                <div class="items">
+                    <img src="imgs/fotos4.JPG" alt="Cristais de gelo refratando a luz do Sol">
+                    <p><strong>A Maior Nevasca Já Registrada
+                    </strong><br>
+                    A maior nevasca da história ocorreu em Silver Lake, Colorado (EUA), em abril de 1921, quando mais de 190 cm de neve caíram em apenas um dia!
+
+                    
+                    <span class="indicativos">Passe o mouse para saber mais!</span></p>
+                </div>
+
+                <div class="items">
+                    <img src="imgs/fotos3.JPG"
+                        alt="Halo solar com cores semelhantes a um arco-íris">
+                    <p><strong>Nevasca no Deserto? Sim, é Possível!
+                    </strong><br>
+                    Apesar de ser raro, já nevou no Deserto do Saara! Em 2018, uma nevasca cobriu as dunas de areia com uma camada branca impressionante. Isso ocorre quando massas de ar polar descem até regiões desérticas.
+
+                    
+                    <span class="indicativos">Passe o mouse para saber mais!</span></p>
+                </div>
+
+                <div class="items">
+                    <img src="imgs/fotos2.JPG"
+                        alt="Halo solar indicando umidade e possível chuva">
+                    <p><strong>Nevascas Fantasmas" no Espaço?</strong><br>
+                      Astrônomos acreditam que outros planetas também podem ter tempestades parecidas com as nevascas terrestres. Em Marte, por exemplo, já foram detectadas tempestades de neve feitas de gelo seco (CO₂ congelado)!
+
+                   
+                    <span class="indicativos">Passe o mouse para saber mais!</span></p>
+                </div>
+
+                <div class="items">
+                    <img src="imgs/fotos1.JPG" alt="Halo solar em cenário histórico">
+                    <p><strong>Neve "Barulhenta" no Frio Extremo
+                    </strong><br>
+                    Quando a temperatura está muito baixa (-30°C ou menos), é possível ouvir um "rangido" forte ao pisar na neve. Isso acontece porque os cristais de gelo quebram de maneira diferente em temperaturas extremas.
+                    
+                    <span class="indicativos">Passe o mouse para saber mais!</span></p>
+                </div>
+            </div>
+    </section>
+        <script src="js/outro.js"></script>
+
+         <!-- secao de conteudo/introducao e possivel 3d -->    
+
+         
+        
+         <script src="js/script.js"></script>
+
+         <section id="sliderr1">
+
+          <div id="lugar"></div>
+
+          <ul class='slider'>
+            <li class='item' style="background-image: url('https://content.skyscnr.com/m/715987f344d8bbd0/original/GettyImages-119962319.jpg?resize=1800px:1800px&quality=100')">
+              <div class='content'>
+                <div class="fundoslide">
+                  <h2 class='title'> Lugar para conhecer a Nevasca</h2><br>
+                  <h2 class='title'>"Edimburgo, Escócia"</h2>
+                  <p class='description'> Nem sempre neva na capital escocesa, mas quando isto acontece, esta pequena cidade se torna um cartão postal ao vivo e a cores. Com edifícios medievais e um castelo no coração da cidade, Edimburgo sob a neve branca traz um vislumbre de outro mundo.  </p>
+                </div>
+                <button onclick="window.open('https://www.vagamundos.pt/visitar-edimburgo-roteiro/')" >conheça mais</button>
+              </div>
+            </li>
+            <li class='item' style="background-image: url('https://content.skyscnr.com/m/1a0611d9220e5d20/original/GettyImages-159190801_doc.jpg?resize=1800px:1800px&quality=100')">
+              <div class='content'>
+                <div class="fundoslide">
+                  <h2 class='title'> Lugar para conhecer a Nevasca</h2><br>
+                  <h2 class='title'>" Zurique, Suíça"</h2>
+                  <p class='description'> Além de ser considerada a cidade com maior qualidade de vida em todo o mundo, Zurique é uma das cidades mais encantadoras da Suíça. Uma visita aqui no inverno rende ótimos registros: ande pela velha cidade, visite suas lojas de antiguidades e alguns de seus 50 museus. Não deixe de visitar o lago e se encantar com os numerosos mercados na cidade.  </p>
+                </div>
+                <button onclick="window.open('https://www.vagamundos.pt/visitar-zurique-roteiro/')" >conheça mais</button>
+              </div>
+            </li>
+            <li class='item' style="background-image: url('https://content.skyscnr.com/m/57b9daa41139f672/original/GettyImages-482706182.jpg?resize=1800px:1800px&quality=100')">
+              <div class='content'>
+                <div class="fundoslide">
+                  <h2 class='title'> Lugar para conhecer a Nevasca</h2><br>
+                  <h2 class='title'>"Bariloche, Argentina"</h2>
+                  <p class='description'> Pode parecer um vilarejo europeu, mas é Bariloche, cidade argentina ao ladinho da Cordilheira dos Andes. É, portanto, um paraíso para os amantes de lugares com neve e de esportes de inverno, e abriga algumas das melhores estações de esqui da América do Sul.  </p>
+                </div>
+                <button onclick="window.open('https://www.vagamundos.pt/bariloche-o-que-fazer/')" >conheça mais</button>
+              </div>
+            </li>
+            <li class='item' style="background-image: url('https://content.skyscnr.com/m/4c00c4b3196378a5/original/GettyImages-465662859_doc.jpg?resize=1800px:1800px&quality=100')">
+              <div class='content'>
+                <div class="fundoslide">
+                  <h2 class='title'> Lugar para conhecer a Nevasca</h2><br>
+                  <h2 class='title'>" Praga, República Tcheca
+                    "</h2>
+                  <p class='description'>
+                    Visualize-se em Praga. Agora imagine a cidade com uma delicada camada de neve… magia pura! Esta cidade é um dos destinos imperdíveis do Leste Europeu. Super romântica e muito, muito bonita, a capital da República Checa parece saída de um conto de fadas
+                  </p>
+                </div>
+                <button onclick="window.open('https://www.vagamundos.pt/visitar-praga-roteiro-2-dias/')" >conheça mais</button>
+              </div>
+            </li>
+            <li class='item' style="background-image: url(' https://content.skyscnr.com/m/71055eab306ff715/original/GettyImages-513491084.jpg?resize=1800px:1800px&quality=100')">
+              <div class='content'>
+                <div class="fundoslide">
+                  <h2 class='title'> Lugar para viagens</h2><br>
+                  <h2 class='title'>" Tromsø, Noruega"</h2>
+                  <p class='description'>
+                    Tromsø é uma cidade no norte da Noruega, localizada acima do Círculo Polar Ártico. Conhecida como a "Porta de Entrada para o Ártico", é famosa por suas paisagens deslumbrantes, a aurora boreal no inverno e o sol da meia-noite no verão.
+                  </p>
+                </div>
+                <button onclick="window.open('https://www.vagamundos.pt/visitar-tromso-aurora-boreal/')" >conheça mais</button>
+              </div>
+            </li>
+            <li class='item' style="background-image: url('https://content.skyscnr.com/m/4ef6e8a51b92b4bd/WordPress_News_Image-164382613.jpg')">
+              <div class='content'>
+                <div class="fundoslide">
+                  <h2 class='title'> Lugar para conhecer a Nevasca</h2><br>
+                  <h2 class='title'>" Nova York, Estados Unidos"</h2>
+                  <p class='description'> Nova York é inesquecível de qualquer maneira, mas não podemos negar que o inverno dá aquela aparência de filme às ruas e praças nova-iorquinas. Sempre há muito o que fazer em Nova York e o inverno na cidade é mágico! </p>
+                </div>
+                <button onclick="window.open('https://www.vagamundos.pt/o-melhor-de-nova-iorque-roteiro-3-dias/')" >conheça mais</button>
+              </div>
+            </li>
+          </ul>
+          <nav class='nav'>
+            <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+            <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+          </nav>
+        
+        
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+           <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+          <script src="js/slider.js"></script>
+          <script src="js/navhome.js"></script>
+      
+
+
+         </section>
+         <footer class="footer-empresarial">
+          <div class="footer-container">
+              <!-- Seção Institucional -->
+              <div class="footer-section institucional">
+                  <h3>TerraXplore</h3>
+                  <p>© 2025 TerraXplore. Todos os direitos reservados. <br> <br></p>
+                  <ul class="footer-links">
+                      <li><a href="../politica-termos/privacidade.html" target="_blank">Política de Privacidade</a></li>
+                      <li><a href="../politica-termos/serviço.html" target="_blank">Termos de Serviço</a></li>
+                      <li><a href="../politica-termos/creditos.html" target="_blank">Créditos de imagens</a></li>
+                  </ul>
+              </div>
+      
+            <!-- Seção Redes Sociais -->
+            <div class="footer-section contato">
+              <h3>Redes Sociais</h3>
+              <ul class="redes-sociais">
+                  <li><a href="https://www.linkedin.com/in/terraxplore/" target="_blank">LinkedIn</a></li>
+                  <li><a href="https://www.instagram.com/terraxplore01?igsh=MTZoNXkxbzI1OWh4eQ== " target="_blank">Instagram</a></li>
+              </ul>
+      
+          </div>
+      
+          </div>
+      </footer> 
+    </main>
+
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+
+    <script src="js/neve360.js"></script>
+    <script src="js/hader.js"></script>
+    <script src="js/curiosidade.js"></script>
+    
+
+</body>
+</html>

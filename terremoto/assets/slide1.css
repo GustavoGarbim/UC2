@@ -1,0 +1,168 @@
+@font-face {
+  font-family: moderna;
+  src: url(fonte/PlaywriteITModerna-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: quicksand;
+  src: url(fonte/Quicksand-VariableFont_wght.ttf);
+}
+
+*{
+  font-family: quicksand;
+}
+
+#mainSlider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.slider {
+  margin: 0;
+  padding: 0;
+}
+
+.item2 {
+  width: 200px;
+  height: 300px;
+  list-style-type: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 30px rgba(255,255,255,0.3) inset;
+  transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+
+  &:nth-child(1), &:nth-child(2) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  &:nth-child(3) { left: 50%; }
+  &:nth-child(4) { left: calc(50% + 220px); }
+  &:nth-child(5) { left: calc(50% + 440px); }
+  &:nth-child(n+6) { left: calc(50% + 660px); opacity: 0; }
+}
+
+/* Ajustes para .content e .content2 */
+.content, .content2 {
+  width: min(40vw, 500px); /* Aumentei a largura para caber mais texto */
+  position: absolute;
+  top: 50%;
+  left: 3rem;
+  transform: translateY(-50%);
+  font: 400 1rem helvetica, sans-serif; /* Aumentei a fonte base */
+  color: white;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+  opacity: 0;
+  display: none;
+}
+
+.fundoslide {
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo mais escuro para melhor contraste */
+  padding: 1.5rem; /* Aumentei o padding para mais espaço interno */
+  border-radius: 15px; /* Bordas mais arredondadas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave para dar profundidade */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borda sutil para destacar */
+}
+
+.content .title, .content2 .title {
+  font-family: 'Arial Black', sans-serif;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+  font-size: 1.5rem; /* Aumentei o tamanho do título */
+}
+
+.content .description, .content2 .description {
+  line-height: 1.7;
+  margin: 1rem 0;
+  font-size: 1rem; /* Aumentei o tamanho da descrição para facilitar a leitura */
+}
+
+/* Exibir o conteúdo apenas no slide ativo */
+.item2:nth-child(1) .content2,
+.item2:nth-child(2) .content {
+  display: block;
+  animation: show 0.75s ease-in-out 0.3s forwards;
+}
+
+@keyframes show {
+  0% {
+    filter: blur(5px);
+    transform: translateY(calc(-50% + 75px));
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(-50%);
+  }
+}
+
+.nav2 {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  user-select: none;
+}
+
+.nav2 .btn {
+  background-color: rgba(255,255,255,0.5);
+  color: rgba(0,0,0,0.7);
+  border: 2px solid rgba(0,0,0,0.6);
+  margin: 0 0.25rem;
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav2 .btn:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+/* Media Queries */
+@media (width > 650px) and (width < 900px) {
+  .content, .content2 {
+    width: min(43vw, 220px);
+  }
+  .content .title, .content2 .title { font-size: 1.3rem; }
+  .content .description, .content2 .description { font-size: 0.9rem; }
+  .item2 {
+    width: 160px;
+    height: 270px;
+  }
+  .item2:nth-child(3) { left: 50%; }
+  .item2:nth-child(4) { left: calc(50% + 170px); }
+  .item2:nth-child(5) { left: calc(50% + 340px); }
+  .item2:nth-child(n+6) { left: calc(50% + 510px); opacity: 0; }
+}
+
+@media (width < 650px) {
+  .content, .content2 {
+    width: min(43vw, 220px);
+    left: 1.5rem; /* Reduzi a margem à esquerda para caber melhor */
+  }
+  .content .title, .content2 .title { font-size: 1.1rem; }
+  .content .description, .content2 .description { font-size: 0.8rem; }
+  .item2 {
+    width: 130px;
+    height: 220px;
+  }
+  .item2:nth-child(3) { left: 50%; }
+  .item2:nth-child(4) { left: calc(50% + 140px); }
+  .item2:nth-child(5) { left: calc(50% + 280px); }
+  .item2:nth-child(n+6) { left: calc(50% + 420px); opacity: 0; }
+}

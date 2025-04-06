@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraXplore</title>
+    <link rel="stylesheet" href="assets/halo.css" type="text/css">
+    <link rel="stylesheet" href="assets/slide1.css" type="text/css">
+    <link rel="shortcut icon" href="assets/logo/logo-ok.png" type="image/x-icon">
+
+</head>
+<body> 
+    <main>
+<!-- secao principal  -->     
+<section id="secao-principal">
+    <div id="fundo-principal"> 
+        <video src="assets/videos/video2.mp4" autoplay loop muted id="video-background"></video>
+        <nav class="heder">
+          <div>
+            <div class="svg-container">
+              <svg ...></svg>
+            </div>
+            <div class="navlogo"><img src="assets/logo/logo-ok.png" alt=" Imagem de fundo"></div>
+          </div>
+          <div id="repon">
+            <a href="../index.html">Home</a>
+            <a href="../fenomenos-atmosfericos/atmosfericos.html">Atmosféricos</a>
+            <a href="../furacao/furacao.html" >Climáticos</a>
+            <a href="../nevasca/nevasca.html">Extremos</a>
+            <a href="../terremoto/terremoto.html" >Geológicos</a>
+            <a href="../tsunami/tsunami.html" >Oceânicos</a>
+            <a href="../halo/halo.html" >Ópticos</a>
+            </div>
+            <div class="svg-container">
+              <svg ...></svg>
+            </div>
+          </div>
+          
+    
+        </nav>
+        <div id="titulo-principal"> <h1 id="texto-titulo"> <strong> Fenômeno Óptico: <br>
+             O Halo Solar </strong> </h1> </div>
+
+    </div>
+</section>
+
+<!-- secao de 3d -->        
+
+<section id="secao3d">
+    <div class="container">
+        <div class="coluna-texto">
+            <h2>O que é o Halo Solar?</h2>
+            <h3>Um Fenômeno Óptico Fascinante</h3>
+            <div class="camadas">
+                <!-- Camada 1: Explicação Básica -->
+                <div class="camada" id="camada-1">
+                    <p>O halo solar é um fenômeno óptico causado pela luz do Sol ao interagir com <span class='destaque'>cristais de gelo</span> em nuvens de alta altitude, como as cirrostratus. Esses cristais refratam a luz, formando um anel brilhante ao redor do Sol, geralmente com <span class='destaque'>22 graus</span>. Ele pode indicar umidade na atmosfera e a aproximação de chuva.</p>
+                    <button class="botao-camada" onclick="mostrarCamada(2)">Clique aqui para saber mais detalhadamente</button>
+                </div>
+                <!-- Camada 2: Explicação Detalhada com Infográfico -->
+                <div class="camada" id="camada-2" style="display: none;">
+                    <p>A luz do Sol é refratada (desviada) ao passar por cristais de gelo hexagonais, que agem como prismas. Isso cria um círculo de 22° ao redor do Sol, com cores que vão do vermelho (parte interna) ao azul (parte externa). O fenômeno é mais comum em regiões frias e pode indicar a chegada de frentes frias ou tempestades.</p>
+                    <p>Existem variações do halo solar, como os <span class='destaque'>sundogs</span> (pontos brilhantes ao lado do Sol) e os <span class='destaque'>pilares de luz</span> (colunas verticais de luz), que também são causados por cristais de gelo em diferentes orientações.</p>
+
+                    <button class="botao-camada voltar" onclick="mostrarCamada(1)">Voltar</button>
+                    <button class="botao-camada" onclick="mostrarCamada(3)">Saiba mais com vídeos e links</button>
+                </div>
+                <!-- Camada 3: Recursos Extras -->
+                <div class="camada" id="camada-3" style="display: none;">
+                    <p>Explore mais sobre o halo solar com os seguintes recursos:</p>
+                    <ul class="recursos-extras">
+                        <li><a href="https://www.youtube.com/watch?v=NrVX46UpFi4" target="_blank">HALO SOLAR: Saiba o que é, como se forma e o que significa fenômeno raro registrado no céu</a></li>
+                        <li><a href="https://pt.wikipedia.org/wiki/Halo_(fen%C3%B3meno_%C3%B3ptico)" target="_blank">Halo (fenómeno óptico)</a></li>
+                    </ul>
+                    <button class="botao-camada voltar" onclick="mostrarCamada(2)">Voltar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="coluna-video">
+            <iframe width="100%" height="315" 
+                src="https://www.youtube.com/embed/TXAgTe_mpeg?si=aL9yZ9y5Oa0GJCVP&controls=0"
+                title="Vídeo 360 VR de nuvens de alta altitude" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+            <p class="legenda">Explore as nuvens de alta altitude em 360° – o ambiente onde o halo solar se forma!</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+        
+<!-- secao de curiosidade -->        
+<section id="secao-curiosidade"> 
+    <h1>Curiosidades Sobre o Halo Solar</h1>
+    <p class="legenda">Passe o mouse nas imagens para descobrir mais!</p>
+    <div class="lista">
+    <div class="lista">
+        <div class="item">
+            <img src="assets/imagens/luz.jpg" alt="Cristais de gelo refratando a luz do Sol">
+            <p><strong>Como ocorre?</strong><br>  
+                Ocorre quando a luz do Sol atravessa os cristais de gelo, que estão suspensos nas nuvens.
+            
+            <span class="indicativo">Passe o mouse para saber mais!</span></p>
+        </div>
+    
+        <div class="item">
+            <img src="assets/imagens/luz2.jpg" alt="Halo solar com cores semelhantes a um arco-íris">
+            <p><strong>Sobre as cores</strong><br> 
+                As cores que aparecem são semelhantes às do arco-íris, formadas pela refração da luz solar nos cristais de gelo.
+            
+            <span class="indicativo">Passe o mouse para saber mais!</span></p>
+        </div>
+
+        <div class="item">
+            <img src="assets/imagens/luz3.jpg" alt="Halo solar indicando umidade e possível chuva">
+            <p><strong>Alerta de chuva</strong><br> 
+                Popularmente, ele indica chuva em 24 a 48 horas. Na realidade, é um indicador de umidade na atmosfera.
+            
+            <span class="indicativo">Passe o mouse para saber mais!</span></p>
+        </div>
+    
+        <div class="item">
+            <img src="assets/imagens/luz5.jpg" alt="Halo solar em cenário histórico">
+            <p><strong>Olhos no passado</strong><br> 
+                Na antiguidade, era um sinal divino – romanos e nórdicos viam nele presságios ou conexões celestiais.
+            
+            <span class="indicativo">Passe o mouse para saber mais!</span></p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!--SECAO SLIDER-->
+
+<main id="mainSlider">
+    <ul class="slider">
+
+      <li class="item2" style="background-image: url('assets/imagens/slide1-2.jpg')">
+        <div class="content">
+          <div class="fundoslide">
+            <h2 class="title">Halo Solar</h2><br>
+            <h2 class="title">"Alpes Austríacos, Áustria"</h2>
+            <p class="description">Visto em uma manhã gelada nos Alpes Austríacos, iluminando as montanhas cobertas de neve.</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="item2" style="background-image: url('assets/imagens/slide1-3.jpg')">
+        <div class="content">
+          <div class="fundoslide">
+            <h2 class="title">Halo Solar</h2><br>
+            <h2 class="title">"Lapônia Finlandesa, Finlândia"</h2>
+            <p class="description">Capturado em um dia gelado na Lapônia Finlandesa, com o domo geodésico ao fundo.</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="item2" style="background-image: url('assets/imagens/slide1-4.jpg')">
+        <div class="content">
+          <div class="fundoslide">
+            <h2 class="title">Halo Solar</h2><br>
+            <h2 class="title">"Zhengding, China"</h2>
+            <p class="description">Avistado sobre a histórica Torre de Chengling em Zhengding, um marco cultural da China.</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="item2" style="background-image: url('assets/imagens/slide1-5.jpg')">
+        <div class="content">
+          <div class="fundoslide">
+            <h2 class="title">Halo Solar</h2><br>
+            <h2 class="title">"Península Antártica, Antártica"</h2>
+            <p class="description">Registrado em um cenário gelado da Península Antártica, com blocos de gelo brilhando ao sol.</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="item2" style="background-image: url('assets/imagens/solar+halo+1.jpg')">
+        <div class="content">
+          <div class="fundoslide">
+            <h2 class="title">Halo Solar</h2><br>
+            <h2 class="title">"Columbia River Gorge, Estados Unidos."</h2>
+            <p class="description">Um halo solar alto no céu do desfiladeiro do Rio Columbia.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <nav class="nav2">
+      <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+      <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+    </nav>
+  </main>
+  
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+<!-- footer -->  
+<footer class="footer-empresarial">
+    <div class="footer-container">
+        <!-- Seção Institucional -->
+        <div class="footer-section institucional">
+            <h3>TerraXplore</h3>
+            <p>© 2025 TerraXplore. Todos os direitos reservados. <br> <br></p>
+            <ul class="footer-links">
+                <li><a href="../politica-termos/privacidade.html" target="_blank">Política de Privacidade</a></li>
+                <li><a href="../politica-termos/serviço.html" target="_blank">Termos de Serviço</a></li>
+                <li><a href="../politica-termos/creditos.html" target="_blank">Créditos de imagens</a></li>
+            </ul>
+        </div>
+
+      <!-- Seção Redes Sociais -->
+      <div class="footer-section contato">
+        <h3>Redes Sociais</h3>
+        <ul class="redes-sociais">
+            <li><a href="https://www.linkedin.com/in/terraxplore/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/terraxplore01?igsh=MTZoNXkxbzI1OWh4eQ== " target="_blank">Instagram</a></li>
+        </ul>
+
+    </div>
+
+    </div>
+</footer>
+
+    </main>
+
+    <script>
+        function mostrarCamada(nivel) {
+            // Esconde todas as camadas
+            document.querySelectorAll('#secao3d .camada').forEach(camada => {
+                camada.style.display = 'none';
+            });
+            // Mostra a camada selecionada
+            document.getElementById(`camada-${nivel}`).style.display = 'block';
+        }
+    
+        // Mostra a primeira camada ao carregar a página
+        mostrarCamada(1);
+    </script>
+
+    
+       
+<script src="halo.js"></script>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <script src="hader.js"></script>
+
+</body>
+</html>
